@@ -1,0 +1,74 @@
+body{
+    overflow: hidden;
+}
+
+
+canvas{
+    height: 90vh;
+    width: 100vw;
+    position: fixed;
+    top: 10%;
+    left: -50%;
+    
+   
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+#canvasB{
+    height: 90vh;
+    width: 50vw;
+    position: fixed;
+    top: 10%;
+    left: 25%;
+}
+
+
+
+#header{
+    width: 90%;
+    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: fixed;
+    top:5%;
+    left:3% ;
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+  
+    
+}
+
+#sections{
+    width: 50%;
+    display:flex;
+    justify-content: space-between;
+   
+}
+
+.button:hover{
+    color: rgb(128, 128, 255);
+}
+
+.curves{
+    z-index: -10;
+    
+}
+
+#cPage{
+    color: rgb(128, 128, 255);
+}
+
+#parent{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#main{
+    overflow: scroll;
+}
+
