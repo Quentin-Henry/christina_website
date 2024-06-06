@@ -1,6 +1,6 @@
 var width, height, center;
-var points = 3;
-var smooth = false;
+var points = 4;
+var smooth = true;
 var path = new Path();
 var mousePos = view.center / 3;
 var pathHeight = mousePos.y;

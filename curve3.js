@@ -4,7 +4,7 @@ var smooth = true;
 var path = new Path();
 var mousePos = view.center / 3;
 var pathHeight = mousePos.y;
-path.fillColor = "blue";
+path.fillColor = "orange";
 initializePath();
 
 function initializePath() {
@@ -24,7 +24,7 @@ function onFrame(event) {
   pathHeight += (center.y - mousePos.y - pathHeight) / 5000;
   for (var i = 1; i < points; i++) {
     var sinSeed = event.count + (i + (i % 90)) * 100;
-    var sinHeight = Math.sin(sinSeed / 500) * pathHeight;
+    var sinHeight = Math.sin(sinSeed / 200) * pathHeight;
     var yPos = Math.sin(sinSeed / 800) * sinHeight + height;
     path.segments[i].point.y = yPos;
   }

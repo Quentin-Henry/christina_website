@@ -8,12 +8,13 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.17/paper-full.min.js"></script>
     <script type="text/paperscript" src="./homepage.js "canvas="canvas"></script>
     <script type="text/paperscript" src="./curve2.js "canvas="canvasB"></script>
+    <script type="text/paperscript" src="./curve3.js "canvas="canvasC"></script>
     <title>Document</title>
 </head>
 <body>
     <div id="parent">
         <div id="header">
-            <div id="title"><a href="./index.html"><div class="button" id="cPage">Christina Curtis MA, LMFT, MFA</div></a></div>
+            <div id="title"><a href="./index.html"><div class="button" id="cPage"><h1>Christina Curtis MA, LMFT, MFA</h1></div></a></div>
         
                 <div id="sections">
                     <a href="./welcome.html"><div class="button">Welcome</div></a>
@@ -23,8 +24,10 @@
             </div>
         
         <div id="main">
+            <canvas class="curves" id="canvasC" resize></canvas>
             <canvas class="curves" id="canvasB" resize></canvas>
             <canvas class="curves" id="canvas" resize></canvas>
+            
         </div>
 
 </body>
