@@ -20,22 +20,19 @@ a{
     
     
     display: flex;
-    justify-content: space-between;
+    
     align-items: center;
+    justify-content: space-between;
     flex-direction: row;
     position: sticky;
    z-index: 10;
-    
+   
   
     
 }
 
-#sections{
-    width: 40%;
-    display:flex;
-    justify-content: space-between;
-   
-}
+
+
 
 .button:hover{
     color:orange;
@@ -43,13 +40,12 @@ a{
 
 
 
-
-
 #parent{
     display: flex;
     flex-direction: column;
     height: 100vh;
-    padding: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
     
 }
 
@@ -57,7 +53,7 @@ a{
 
 h1{
    color: orange;
-   font-size: 2em;
+   font-size: 3.5em;
 }
 
 
@@ -80,7 +76,11 @@ canvas{
     top: 30%;
     left: -30%;
 }
-
+button{
+    background-color: #ffffff;
+    border: none;
+    font-size: 3em;
+}
 #canvasC{
     height: 90vh;
     width: 100vw;
@@ -92,4 +92,40 @@ canvas{
     z-index: -10;
     
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    position: relative;
+    left: 13%;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    
+    background-color: #ffffff;
+    min-width: 160px;
+   
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ffffff;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #ffffff;
+  }
+
+ 
 
