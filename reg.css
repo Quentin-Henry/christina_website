@@ -1,6 +1,6 @@
 body{
     
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 1.5vw;
     height: auto;
 }
@@ -129,6 +129,12 @@ ul{
     z-index:10;
     pointer-events: none;
     
+}
+
+.altQ{
+
+font-weight: 100;
+
 }
 
 
