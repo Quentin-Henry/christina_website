@@ -4,7 +4,7 @@ var smooth = true;
 var path = new Path();
 var mousePos = view.center / 3;
 var pathHeight = mousePos.y;
-path.fillColor = "blue";
+path.fillColor = "#D0483D";
 initializePath();
 
 function initializePath() {
