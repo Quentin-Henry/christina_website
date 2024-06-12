@@ -175,7 +175,8 @@
         font-size: 5vw;
         font-family: Helvetica, Arial, sans-serif;
         height: auto;
-        background-color: #f7f7f7
+        background-color: #f7f7f7;
+        overflow-x: hidden;
     }
 
     a{
@@ -183,6 +184,10 @@
         color: rgb(0, 0, 0);
     }
 
+    
+#tes{
+    height: 800vw;
+}
     #mainTitle{
         font-size: 1em;
         color:#D0483D;
@@ -253,11 +258,11 @@
         display: flex;
         flex-direction: column;
         height:auto;
-        width: 101vw;
+        width: 100vw;
         position: relative;
-        left:-1%;
-        padding: 3%;
-       
+        left:0%;
+        padding: 5%;
+       overflow-x: hidden;
         background-color: #f7f7f7
         
     }
@@ -358,9 +363,7 @@
         color: #f7f7f7;
     }
     
-    #tes{
-    height: 200vw;
-    }
+   
 
     
 }
@@ -372,8 +375,8 @@ body{
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1.5vw;
     height: auto;
-    background-color: #f7f7f7
-
+    background-color: #f7f7f7;
+    overflow-x: hidden;
    
 }
 
@@ -432,7 +435,7 @@ a{
     height:auto;
     width: 101vw;
     position: relative;
-    left:-1%;
+    left: -2%;
     padding: 3%;
    
     background-color: #f7f7f7
