@@ -581,6 +581,10 @@ height: 200vw;
     display: none;
 }
 
+#map{
+    position: fixed;
+    bottom:10%;
+}
 }
 
 
