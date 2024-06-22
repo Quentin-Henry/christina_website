@@ -322,6 +322,11 @@
         
         margin-right: 10%;
     }
+
+    #map{
+        position: relative;
+        bottom:3%;
+    }
     
     #quoteCont{
         border-top: 1.5px solid rgb(0, 0, 0); 
@@ -559,7 +564,7 @@ canvas{
 }
 
 #foot{
-    background-color: #D0483D;
+    background-color: hsl(4, 61%, 53%);
     height: 20em;
     width: 100vw;
     position: fixed;
@@ -582,9 +587,13 @@ height: 200vw;
 }
 
 #map{
-    position: fixed;
+    position: relative;
     bottom:10%;
 }
+#emailLink{
+    color: #f7f7f7;
+    text-decoration: underline;
+  }
 }
 
 

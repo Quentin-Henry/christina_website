@@ -35,19 +35,6 @@ function onMouseMove(event) {
   mousePos = event.point;
 }
 
-function onMouseDown(event) {
-  smooth = !smooth;
-  if (!smooth) {
-    // If smooth has been turned off, we need to reset
-    // the handles of the path:
-    for (var i = 0, l = path.segments.length; i < l; i++) {
-      var segment = path.segments[i];
-      segment.handleIn = segment.handleOut = null;
-    }
-  }
-}
-
-// Reposition the path whenever the window is resized:
 function onResize(event) {
   initializePath();
 }
