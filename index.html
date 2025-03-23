@@ -1,73 +1,588 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./navCSS.css">
-    <link rel="icon" type="image/x-icon" href="./img/Favicon.ico">
-    <script type="text/javascript" src="./paper-full.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.17/paper-full.min.js"></script>
-    <script type="text/paperscript" src="./curve1.js "canvas="canvas"></script>
-    <script type="text/paperscript" src="./curve2.js "canvas="canvasB"></script>
-    <script type="text/paperscript" src="./curve3.js "canvas="canvasC"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    
-    <title>Christina Curtis</title>
-</head>
-
-
-<body>
-    <div class="background"></div>
-    <div id="parent">
-        
-        <div id="header" class="h">
-            
-	
-            <div><a href="./index.html"><div class="button" id="mainTitle">Christina Curtis MA, LMFT, MFA</div></a></div>
-            
-            <div id="top-head-inner">
-                <div id="nav-toggle">
-                    <div>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-                <nav id="global-nav">
-                    <ul>
-                        <li><a href="./welcome.html"><h2>Welcome</h2></a></li>
-                        <li><a href="./bio.html"><h2>Bio</h2></a></li>
-                        <li><a href="./consulting.html"><h2>Consulting</h2></a></li>
-                        
-                    </ul>
-                </nav>
-                <div id="nav-bg"></div>
-            </div>
-
-            <div id="sections">
-                    
-                      
-                <a href="./welcome.html"><div class="button" >Welcome</div></a>
-                <a href="./bio.html"><div class="button">Bio</div></a>
-                <a href="./consulting.html"><div class="button">Consulting</div></a>
-            </div>
-                    
-                      
-                  
-               
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Christina Curtis - Couples Therapy for Creatives in Brooklyn"
+    />
+    <link rel="stylesheet" href="christinaHomepagecss.css" />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.17/paper-full.min.js"
+    ></script>
+    <script
+      type="text/paperscript"
+      src="./curve1.js"
+      canvas="waveCanvas"
+    ></script>
+    <title>Christina Curtis MA, LMFT, MFA</title>
+  </head>
+  <body>
+    <!-- Main content wrapper -->
+    <div class="site-wrapper">
+      <!-- Floating navigation bar -->
+      <header class="floating-nav">
+        <div class="nav-content">
+          <div class="logo">
+            <h1>
+              Christina Curtis <span class="credentials">MA, LMFT, MFA</span>
+            </h1>
+          </div>
+          <nav class="desktop-nav" aria-label="Main navigation">
+            <a href="#welcome">welcome</a>
+            <a href="#about">bio</a>
+            <a href="#consulting">consulting</a>
+            <a href="#contact">contact</a>
+          </nav>
+          <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
-        <div id="main">
-            <canvas class="curves" id="canvasC" resize></canvas>
-            <canvas class="curves" id="canvasB" resize></canvas>
-            <canvas class="curves" id="canvas" resize></canvas>
-            
-            
-        
-                    
-                </div>
-            </div>
+      </header>
+
+      <!-- Mobile navigation overlay -->
+      <nav class="mobile-nav" aria-label="Mobile navigation">
+        <div class="mobile-nav-content">
+          <a href="#welcome">Welcome</a>
+          <a href="#about">About</a>
+          <a href="#consulting">Consulting</a>
+          <a href="#contact">Contact</a>
         </div>
-        <script type="text/javascript" src="./ani.js"></script>
-</body>
+      </nav>
+
+      <!-- Sections -->
+      <section id="hero" class="full-section wave-section">
+        <canvas id="waveCanvas" resize></canvas>
+      </section>
+
+      <section id="welcome" class="full-section wave-section">
+        <canvas id="waveCanvas" resize></canvas>
+        <div class="welcome-content">
+          <div class="quotes">
+            <blockquote>
+              "Though I lack the art<br />
+              to decipher it,<br />
+              no doubt the next chapter<br />
+              in my book of transformations<br />
+              is already written.<br />
+              I am not done with my changes."<br />
+              <cite>–Stanley Kunitz</cite>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section id="welcome" class="full-section content-section">
+        <div class="section-content">
+          <h2 class="section-title">welcome to my practice</h2>
+          <div class="full-width-card">
+            <div class="card-content">
+              <p>
+                I see adult individuals and couples, preferably in person but
+                also recognize that’s not always possible. I like to say that
+                I’m an individual therapist who can hold the complexity of your
+                relational world and a couples therapist who recognizes the
+                sacred autonomy of the individual. I can help you identify
+                habitual patterns, gain awareness of triggers, learn flexibility
+                in response to stress, as well as to communicate with partners
+                differently, through working with active listening, assertive
+                communication and sharpening your language skills.
+              </p>
+            </div>
+          </div>
+
+          <div class="full-width-card">
+            <div class="card-content">
+              <h3>my approach</h3>
+              <p>
+                Good therapy illuminates what we do and why we do it. It can
+                help you be more compassionate about the past, with self and
+                others. At the same time, a good therapist pushes you to become
+                more accountable in the present. Practice doing one thing
+                differently! Learn to say it in a way your partner will hear it.
+                On a thought level, therapy moves us toward flexibility and
+                integration, recognizing that in most relationships there’s a
+                lot of gray area–many things can be true at once in a
+                relationship. Good therapy should work not just on change but on
+                accepting what is. To accept yourself or the reality of your
+                situation does not mean it will never change or that you
+                shouldn’t try to improve but that you stop energetically running
+                away from where you are right now. We need to explore the
+                mysteries of the past, be accountable in the present and to
+                loosen our grip on the illusion of a predefined future.
+              </p>
+              <p>
+                Many of my clients are creatives and if you're looking for a
+                programmatic way of working, like a short term CBT model, I'm
+                not the right fit. But I also think clients should be wary of a
+                process that's only gentle and accommodating. Therapy is not
+                meant to be a warm bath– it's best to speak together openly and
+                frankly.
+              </p>
+              <p>
+                If you’re going to come in and do the work, it should be weekly
+                at first and should be focused. Couples benefit from couples
+                therapy because it’s a place where they can learn to have a
+                different conversation with each other and to re-establish
+                kindness and empathy. For individuals, I’ll want to know your
+                goals and expectations for therapy, recognizing that for so many
+                New Yorkers what’s most helpful involves a growth
+                mandate(support for a meditation practice, accountability around
+                health habits, workplace communication strategies, how to reduce
+                conflict in your romantic relationship).Ultimately, therapy is
+                an important investment in personal and relational growth– it
+                helps people grow up, function more effectively in the world and
+                treat self and others with more empathy. When you work it, it
+                works. I can help.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="full-section content-section">
+        <div class="section-content">
+          <h2 class="section-title">Bio</h2>
+          <div class="full-width-card">
+            <div class="card-content bio-content">
+              <!-- Added bio-content-wrapper to contain the image and text -->
+              <div class="bio-content-wrapper">
+                <!-- Headshot container -->
+                <div class="headshot-container">
+                  <img
+                    src="/img/bio_img.jpg"
+                    alt="Christina Curtis headshot"
+                    class="headshot-image"
+                  />
+                </div>
+                <!-- Bio text -->
+                <div class="bio-text">
+                  <p>
+                    I'm a systems thinker. I understand people through the lens
+                    of their relationships, past and present. From my original
+                    training in family systems theory and my early work in
+                    hospice bereavement service, suicide prevention and other
+                    crisis modalities, I've ranged broadly in my own
+                    explorations of personal meaning and how it's imaginally
+                    constituted. In crisis and bereavement work I learned the
+                    power of witness, to sit with people without trying to "fix"
+                    the pain of a tragic experience. That was terrific training
+                    in talking, listening and staying close to what's true.
+                    Since then, I've spent 15 years as a couples and individual
+                    therapist in private practice. I'm a longtime member of a
+                    professional supervision group run by Esther Perel, LMFT and
+                    her thinking has been tremendously impactful in my outlook
+                    and work with couples. I've served as the Clinical Director
+                    for two different Marriage and Family training practices,
+                    providing clinical supervision and running the training
+                    program for dozens of post masters trainees. I have advanced
+                    training in various modalities, including extensive training
+                    in RLT(Relational Life Therapy), Prepare/Enrich, Discernment
+                    Counseling and Critical Incident Stress Debriefing. I have a
+                    working knowledge of Imago and The Gottman Method and use
+                    many of those techniques. But beyond my professional
+                    background, my own passions and life experience come into
+                    the room a lot. Parenthood, an informal and extroverted
+                    style, my past as a poet and professor of literature– as
+                    well as film, rock music and visual art–have been deeply
+                    influential in my thinking as a therapist. The thing that
+                    art and relational psychotherapy has in common is the
+                    compassionate awareness that we are not alone. In my work
+                    with clients, I make space for the philosophical, the
+                    intuitive and their intersection: the things we know without
+                    reason.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="consulting" class="full-section content-section">
+        <div class="section-content">
+          <h2 class="section-title">workplace relational consulting</h2>
+
+          <div class="full-width-card">
+            <div class="card-content">
+              <p>
+                As a younger therapist, I cared deeply about personal stories
+                but didn't understand the way in which workplace relationships
+                are often part of that personal story. I saw work issues as a
+                passing reflection of whatever workplace culture in which that
+                particular person happened to find herself, not yet
+                understanding workplaces as predictable sites of co-created,
+                dynamic systems, in which team members often take on roles
+                familiar in other parts of their life. With my foundational
+                training in family systems, I began to notice the ways in which
+                my client’s workplaces were organized in similar ways to their
+                families. Struggles with authority, “sibling” rivalry,
+                difficulty in communicating effectively, people pleasing, fear
+                of confrontation, etc–were endemic in workplace relational
+                structures. I began to talk with my clients about looking at
+                their relational and attachment styles, not just in terms of how
+                they were showing up in their romantic and platonic
+                relationships—but how they were interacting at work, too. Both
+                families and workplaces operate as homeostatic systems. Within
+                those systems, individuals often play roles(both official
+                assigned roles within the workplace hierarchy and also shadow
+                roles–caretaker, martyr, angry person–in which legitimate
+                authority and overt hierarchy are mediated or even eclipsed by
+                covert dynamics that don’t correspond to the org chart.
+              </p>
+              <p>
+                I’m now completing a postmasters certificate in Organizational
+                Behavioral Consulting at the Harvard Extension School. In my
+                Organizational Behavior courses, study has focused upon:
+              </p>
+            </div>
+          </div>
+
+          <div class="full-width-card">
+            <div class="card-content">
+              <ul class="animated-list">
+                <li class="list-item">
+                  Supporting conflict resolution through the lens of workplace
+                  culture
+                </li>
+                <li class="list-item">
+                  What constitutes a culture that motivates employees
+                </li>
+                <li class="list-item">
+                  The conditions necessary for employees to thrive in the
+                  workplace
+                </li>
+                <li class="list-item">Workplace belonging and buy-in</li>
+                <li class="list-item">
+                  Leadership studies and how to maximize every team member's
+                  innate leadership potential
+                </li>
+                <li class="list-item">
+                  Setting employees up for success within their roles and
+                  working with disparate working and leadership styles
+                </li>
+                <li class="list-item">The art of negotiation</li>
+                <li class="list-item">Change management techniques</li>
+                <li class="list-item">
+                  Effects of gender and race on leadership styles
+                </li>
+                <li class="list-item">
+                  Implicit and explicit power structures within the workplace
+                  and how to work with each
+                </li>
+                <li class="list-item">
+                  The role of personality theory and personality testing in
+                  workplace functioning
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="full-width-card">
+            <div class="card-content">
+              <p>
+                Patrick Lencioni, in his seminal book of the same name, defines
+                the five dysfunctions of a team: absence of trust, fear of
+                conflict, lack of commitment, avoidance of accountability and
+                inattention to results. Consultants often come into an
+                organization to evaluate the last three of these items but, in
+                my estimation, often insufficiently address the first two items.
+                Conflict avoidance and lack of trust on a team are not solely
+                linked to organizational style, structure or decision making.
+                Leadership isn't always able to “organize” themselves out of a
+                trust problem, for example. It’s important to look at
+                individuals on a team and the collective team dynamic: their
+                orientation to vulnerability, trusting authority and their
+                baseline conflict resolution skills. In looking at Lencioni’s
+                first two items, it’s apparent that professionals with a
+                background in mental health and wellness, systemic thinking and
+                relational intelligence are needed to help leaders address the
+                interpersonal aspects of team functioning.
+              </p>
+              <p>
+                My consultation work within workplace settings involves teaching
+                team members about emotional self regulation, appropriate
+                vulnerability, structural issues that support emotional safety
+                in the workplace(understood policies and procedures that have
+                been communicated ahead of a problem), the language of
+                accountability, communication skills(finding the language) and
+                acknowledging existing hierarchies and power structures, both
+                explicit and implicit power structures. For leaders, training
+                and practice are needed– the ability to pull the camera back and
+                see the larger picture within a given workplace conflict.
+              </p>
+              <p>
+                I rely heavily upon my seminal training in family and group
+                systems, particularly the work of Irvin Yalom, Carl Whitaker,
+                Salvador Minuchin, The Milan and Palo Alto groups of Family
+                Therapists and Virginia Satir. In organizational consulting,
+                I've been influenced by the Competing Values Framework in
+                looking at styles and solutions within workplace culture and
+                Brene Brown, Patrick Lencioni and Simon Sinek for their work on
+                vulnerability, change and servant leadership. My thinking has
+                also been influenced by models for change management, such as
+                the Kubler Ross Change Curve and the Satir Change Model.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="full-section content-section">
+        <div class="section-content">
+          <h2 class="section-title">contact</h2>
+
+          <!-- Office Locations Card -->
+          <div class="full-width-card">
+            <div class="card-content office-locations">
+              <h3>office locations for in-person sessions</h3>
+
+              <div class="location-cards">
+                <!-- Manhattan Office with Google Maps link -->
+                <a
+                  href="https://maps.google.com/?q=80+Fifth+Avenue,+Suite+1001,+New+York,+NY+10011"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="location-card-link"
+                >
+                  <div class="location-card">
+                    <h4>manhattan office</h4>
+                    <p>
+                      80 Fifth Avenue, Suite 1001<br />
+                      New York, NY 10011
+                    </p>
+                    <p class="location-note">
+                      Convenient to Union Square and Chelsea
+                    </p>
+                    <div class="map-link-indicator"></div>
+                  </div>
+                </a>
+
+                <!-- Woodstock Office with Google Maps link -->
+                <a
+                  href="https://maps.google.com/?q=15+Pine+Grove+Street+Woodstock,+NY+12498"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="location-card-link"
+                >
+                  <div class="location-card">
+                    <h4>woodstock office</h4>
+                    <p>15 Pinegrove Street Woodstock, NY 12498</p>
+                    <p class="location-note">
+                      Located in the heart of Woodstock
+                    </p>
+                    <div class="map-link-indicator"></div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="locations-note"></div>
+            </div>
+          </div>
+          <!-- Contact Methods Card -->
+          <div class="full-width-card">
+            <div class="card-content contact-info">
+              <h3>get in touch</h3>
+              <p>Email: christinacurtis@gmail.com</p>
+              <p>Phone: (646) 820-1216</p>
+              <p>
+                Please reach out to schedule a consultation or learn more about
+                my practice.
+              </p>
+              <div class="contact-note"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      // Wave canvas transition effect on scroll
+      const waveCanvas = document.getElementById("waveCanvas");
+      const welcomeSection = document.getElementById("welcome");
+
+      function updateCanvasTransition() {
+        const scrollPosition = window.pageYOffset;
+        const welcomeHeight = welcomeSection.offsetHeight;
+
+        // Calculate opacity based on scroll position
+        let opacity = 1;
+        if (scrollPosition < welcomeHeight) {
+          opacity = 1 - scrollPosition / welcomeHeight;
+        } else {
+          opacity = 0;
+        }
+
+        // Apply smooth fade out
+        waveCanvas.style.opacity = opacity;
+
+        // Optional: Subtle scale effect
+        const scale = 1 + 0.05 * (1 - opacity);
+        waveCanvas.style.transform = `scale(${scale})`;
+      }
+
+      // Add smooth transition
+      waveCanvas.style.transition = "opacity 0.3s ease, transform 0.3s ease";
+
+      // Update on scroll
+      window.addEventListener("scroll", updateCanvasTransition);
+
+      // NEW SCROLL-BASED NAVIGATION HIGHLIGHTING
+      // This uses a different approach based on scroll position rather than IntersectionObserver
+      function updateActiveNavOnScroll() {
+        const scrollPosition = window.scrollY;
+
+        // Get all sections that have corresponding navigation links
+        const sections = [];
+        document
+          .querySelectorAll(".desktop-nav a, .mobile-nav a")
+          .forEach((link) => {
+            const sectionId = link.getAttribute("href").substring(1);
+            const section = document.getElementById(sectionId);
+            if (section) {
+              sections.push({ id: sectionId, element: section, link: link });
+            }
+          });
+
+        // Sort sections by their position in the document
+        sections.sort((a, b) => a.element.offsetTop - b.element.offsetTop);
+
+        // Find the current section based on scroll position
+        let currentSection = sections[0];
+
+        for (let i = 0; i < sections.length; i++) {
+          const section = sections[i];
+          // Use a buffer of 200px so the navigation updates a bit earlier
+          // This can be adjusted as needed
+          if (section.element.offsetTop - 200 <= scrollPosition) {
+            currentSection = section;
+          } else {
+            break;
+          }
+        }
+
+        // Update active class only if we have a current section
+        if (currentSection) {
+          document
+            .querySelectorAll(".desktop-nav a, .mobile-nav a")
+            .forEach((link) => {
+              link.classList.remove("active");
+            });
+
+          // Find all nav links that point to the current section
+          document
+            .querySelectorAll(
+              `.desktop-nav a[href="#${currentSection.id}"], .mobile-nav a[href="#${currentSection.id}"]`
+            )
+            .forEach((link) => {
+              link.classList.add("active");
+            });
+        }
+      }
+
+      // Add scroll event listener for navigation highlighting
+      window.addEventListener("scroll", updateActiveNavOnScroll);
+
+      // Also run on page load to set initial state
+      window.addEventListener("load", updateActiveNavOnScroll);
+
+      // Content sections fade in
+      const contentSections = document.querySelectorAll(".section-content");
+      const contentObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        },
+        {
+          threshold: 0.1,
+        }
+      );
+
+      contentSections.forEach((section) => {
+        contentObserver.observe(section);
+      });
+
+      // Smooth scroll behavior
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href");
+          const targetElement = document.querySelector(targetId);
+
+          targetElement.scrollIntoView({
+            behavior: "smooth",
+          });
+
+          // Update active state
+          document
+            .querySelectorAll(".desktop-nav a, .mobile-nav a")
+            .forEach((link) => link.classList.remove("active"));
+          this.classList.add("active");
+
+          // Close mobile menu if open
+          document.querySelector(".mobile-nav").classList.remove("active");
+          document.querySelector(".mobile-menu-btn").classList.remove("active");
+        });
+      });
+
+      // Mobile menu toggle
+      document
+        .querySelector(".mobile-menu-btn")
+        .addEventListener("click", function () {
+          this.classList.toggle("active");
+          document.querySelector(".mobile-nav").classList.toggle("active");
+        });
+      const floatingNav = document.querySelector(".floating-nav");
+
+      function updateNavSize() {
+        const scrollPosition = window.pageYOffset;
+        const welcomeHeight = welcomeSection.offsetHeight;
+
+        // Check if we're in the welcome section
+        if (scrollPosition <= welcomeHeight * 0.1) {
+          // At top or near top of welcome section
+          floatingNav.classList.remove("compressed");
+        } else {
+          // Scrolled past welcome section
+          floatingNav.classList.add("compressed");
+        }
+      }
+
+      // Add scroll event listener for nav size
+      window.addEventListener("scroll", updateNavSize);
+
+      // Initial check on load
+      updateNavSize();
+
+      // Observer for animated list items
+      const listItems = document.querySelectorAll(".list-item");
+      const listObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              // Optional: Unobserve after animating to improve performance
+              // listObserver.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.1,
+          rootMargin: "0px 0px -50px 0px",
+        }
+      );
+
+      // Observe each list item
+      listItems.forEach((item) => {
+        listObserver.observe(item);
+      });
+    </script>
+  </body>
 </html>
