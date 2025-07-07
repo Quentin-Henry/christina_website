@@ -280,7 +280,10 @@ blockquote cite {
   color: var(--primary-color);
   font-weight: 500;
   text-align: left;
-  padding: 3rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 /* Full-width card styles */
@@ -418,7 +421,7 @@ blockquote cite {
   }
 
   .full-section {
-    padding: 8rem 1rem 4rem;
+    padding: 4rem 1rem 4rem;
   }
 
   .full-width-card {
@@ -428,6 +431,10 @@ blockquote cite {
   .section-title {
     font-size: clamp(2rem, 4vw, 2.5rem);
     margin-bottom: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .full-width-card h3 {
